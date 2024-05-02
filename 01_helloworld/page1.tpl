@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Hello World In A Bottle</title>
+<title>Page 1</title>
 <style type="text/css">
 body {
     margin: 25px;
@@ -48,8 +48,8 @@ window.onload = add_validation_links;
 <main>
 <h1>Welcome To The Index Page</h1>
 
-<a href= "template.tpl">Click to greet another page!</a>
-<a href= "page1.tpl">Click for a surprise!</a>
+<a href= "template.tdl">Click to greet another page!</a>
+<a href= "template.tdl">Go to the Main Stage! Kakavasha!</a>
 </main>
 
 <footer>
