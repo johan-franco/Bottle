@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rectangle Area and Perimeter</title>
+<style type="text/css">
+body {
+    margin: 25px;
+    padding: 25px;
+}
+section {
+    border: 1px dotted #555;
+}
+section p {
+    padding: 25px;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+}
+label {
+    display: block;
+}
+label.dropdown {
+    display: inline;
+}
+label, button {
+    margin: 10px;
+}
+a, a:visited {
+    color: #663;
+    text-decoration: none;
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+</style>
+<script>
+function add_validation_links() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = add_validation_links;
+</script>
+</head>
+
+<body>
+<h1>Rectangle Area and Perimeter</h1>
+<p>
+This app will draw a rectangle in <q>screen units</q>, which are basically
+a percentage of the display width of the screen. So entering 33 for length
+will draw the rectangle about 1/3 of with screen width (width is height and
+length is width).
+</p>
+
+<section>
+<h2>Please enter the width and length of your desired rectangle</h2>
+<form method="post" action="/">
+  <label>width: <input type="number" name="width" min="1" max="200"></label>
+  <label>length: <input type="number" name="length" min="1" max="100"></label>
+  <label class="dropdown" for "color">color:</label>
+  <select name="color" id="color">
+    <option value="red">red</option>
+    <option value="blue">blue</option>
+    <option value="green">green</option>
+    <option value="orange">orange</option>
+    <option value="purple">purple</option>
+    <option value="sienna">sienna</option>
+    <option value="goldenrod">goldenrod</option>
+  </select>
+  <button type="submit">Submit</button>
+</form>
+</section>
+
+<footer>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> | 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

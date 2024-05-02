@@ -1,0 +1,41 @@
+body {
+    margin: 25px;
+    padding: 25px;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    color: #555;
+}
+table {
+    margin-left: 30px;
+    border: 1px dotted #555;
+}
+tr {
+}
+td {
+    padding: 10px;
+    border-top: 1px dotted #555;
+    border-left: 1px dotted #555;
+}
+td:first-child {
+    border-left: hidden;
+}
+tr:first-child td {
+    border-top: hidden;
+}
+label {
+    display: block;
+}
+label, button {
+    margin: 10px;
+}
+a, a:visited {
+    color: #663;
+    text-decoration: none;
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+}

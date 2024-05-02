@@ -1,0 +1,26 @@
+body {
+    margin-left: 320px;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    background: url(images/cookiemonster.png);
+    background-repeat: no-repeat;
+    background-position: 30px 30px;
+}
+h1 {
+    color: #000;
+}
+h1, h2, p, form {
+    text-align: center;
+}
+a, a:visited {
+    color: #933;
+    text-decoration: none;
+}
+label {
+    display: block;
+}
+footer {
+    text-align: center;
+    margin-top: 50px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ad Lib</title>
+<style type="text/css">
+body {
+    margin: 25px;
+    padding: 25px;
+}
+form {
+    border: 1px dotted #555;
+}
+label {
+    display: block;
+}
+label, button {
+    margin: 10px;
+}
+a, a:visited {
+    color: #663;
+    text-decoration: none;
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+</style>
+<script>
+function add_validation_links() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = add_validation_links;
+</script>
+</head>
+<body>
+<h1>Ad Lib</h1>
+
+<h2>Please enter each of the following parts of speech:</h2>
+<form method="post" action="/">
+  <label>A girl's name: <input name="name" type="text"></label>
+  <label>A place: <input name="place" type="text"></label>
+  <label>Type of family relation: <input name="relation" type="text"></label>
+  <label>A thing: <input name="thing" type="text"></label>
+  <label>An action ending in <q>ing</q>: <input name="action" type="text">
+  </label>
+  <label>A body organ: <input name="organ" type="text"></label>
+  <label>An adjective: <input name="adj1" type="text"></label>
+  <label>An adjective: <input name="adj2" type="text"></label>
+  <label>An adjective: <input name="adj3" type="text"></label>
+  <label>A thing: <input name="thing2" type="text"></label>
+
+  <button type="submit">Submit</button>
+</form>
+
+<footer>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> | 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>
