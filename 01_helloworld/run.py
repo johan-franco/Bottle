@@ -14,8 +14,8 @@ def index(name='World'):
 def page1():
     return bottle.template('page1')
 @bottle.route('/<truth>')
-def page1():
-    truth = {truth};
+def truthtables():
+    truth = {truth}
     return bottle.template('truthtables', truth_table = truth)
 
 bottle.run(host='0.0.0.0', port=8090)
