@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Page 1</title>
+<title>Hello World In A Bottle</title>
 <style type="text/css">
 body {
     margin: 25px;
@@ -46,10 +45,10 @@ window.onload = add_validation_links;
 <body>
 
 <main>
-<h1>Welcome To The First Page</h1>
+<h1>{{message}}</h1>
 
-<a href= "template.tdl">Click to greet another page!</a>
-<a href= "template.tdl">Go to the Main Stage! Kakavasha!</a>
+<p>Add <code>/[message]</code> (example: <code>/New York</code>) to change
+the message.</p>
 </main>
 
 <footer>
