@@ -4,6 +4,6 @@
 <ol>
   <li><a href="/Guido">A Name</a></li>
   <li><a href="/Guido/42">A Name and a Number</a></li>
-  <li>Now you try with your own names and numbers</li>
+  <li><a href="/Guido/42/Hart">First Name, Last, and a Number</a></li>
 </ol>
 %rebase layout

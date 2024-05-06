@@ -3,15 +3,22 @@ import bottle
 
 
 @bottle.route('/')
+def welcome():
+    return bottle.template('welcome')
 @bottle.route('/<name>')
+def name(name = ''):
+    the_message = f'The name {name} was passed to me!'
+    print(the_message)
+    return bottle.template('message', message = the_message)
 @bottle.route('/<name>/<number>')
 def different_index(name='', number=''):
-    if not name and not number:
-        return bottle.template('welcome')
-    if name and not number:
-        the_message = f'The name {name} was passed to me!'
-    else:
-        the_message = f'Received name {name} and number {number}!'
+    the_message = f'Received name {name} and number {number}!'
+    print(the_message)
+    return bottle.template('message', message=the_message)
+@bottle.route('/<name>/<number>/<lastname>')
+def last_name(name='', number= '',lastname=''):
+    the_message = f'Received name {name}, last name {lastname}, and number {number}!'
+    print(the_message)
     return bottle.template('message', message=the_message)
 
 
