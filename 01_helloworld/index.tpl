@@ -48,9 +48,8 @@ window.onload = add_validation_links;
 <main>
 <h1>Welcome To The Index Page</h1>
 
-<a href= "template.tpl">Click to greet another page!</a>
-<a href= "page1.tpl">Click for a surprise!</a>
-<a href= "truthtables.tpl">TruthTables</a>
+<a href= "page1">Click for a surprise!</a>
+<a href= "truthtables">TruthTables</a>
 
 </main>
 
