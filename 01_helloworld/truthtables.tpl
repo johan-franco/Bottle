@@ -45,10 +45,9 @@ window.onload = add_validation_links;
 <body>
 
 <main>
-<h1>{{message}}</h1>
+<h1>TruthTables:</h1>
 
-<p>Add <code>/[message]</code> (example: <code>/New York</code>) to change
-the message.</p>
+<code>{{truth_tables}}</code>
 </main>
 
 <footer>

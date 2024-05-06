@@ -50,6 +50,8 @@ window.onload = add_validation_links;
 
 <a href= "template.tpl">Click to greet another page!</a>
 <a href= "page1.tpl">Click for a surprise!</a>
+<a href= "truthtables.tpl">TruthTables</a>
+
 </main>
 
 <footer>

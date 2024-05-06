@@ -14,14 +14,14 @@ def index(name='World'):
 @bottle.route('/page1')
 def page1():
     return bottle.template('page1')
-@bottle.route('/<truth>')
-def truthtables(truth = 'P and Q'):
-    display = {truth}
-    display = print(ttg.Truths(
-    ['p', 'q', 'r'],
-    ['p => q', 'q => r', '(p => q) or (q => r)'],
-    ints=False)
-)
-    return bottle.template('truthtables', truth_table = display)
 
+@bottle.route('/truthtables/<truth>')
+def truthtables(truth='P and Q'):
+    truth_parts = truth.split()
+    
+    variables = set(part for part in truth_parts if part.isalpha())
+    
+    display = ttg.Truths(variables, [truth], ints=False)
+    
+    return bottle.template('truthtables', truth_table=display)
 bottle.run(host='0.0.0.0', port=8090)
